@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Contend</title>
+	<title>School Dashboard</title>
 	<style>
 *{
   margin: 0;
@@ -81,8 +81,10 @@ body{
   border-radius: 50%;
   color: #41769a;
   background-color: white;
+  position: relative;
   
 }
+
 
 .wrapper .top_navbar .top_menu ul li a:hover{
   background: #41769a;
@@ -158,16 +160,70 @@ body{
   
 }
 
+
+
 .wrapper .main_container .item{
   background: rgb(247, 244, 244);
-  margin: 50px;
-
-  /* margin-bottom: 50px; */
-  padding: 30px;
+  /* margin: 50px; */
+  margin-left: 50px;
+  padding: 20px;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 22px; 
+}
+.container-2{
+  display: flex;
+  height: 350px;
+  width: 800px;
+  justify-content: space-between;
   
 }
+.container-2 .left img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+
+  
+}
+
+.container-2 .left{
+  flex-basis: 65%;
+  background-color: white;
+
+}
+.container-2 .left button{
+  padding: 5px 15px;
+  background-color: #41769a;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.container-2 .left .span-1{
+  margin: 60px;
+}
+.container-2 .right{
+  flex-basis: 35%;
+  background-color: white;
+}
+.container-3{
+  width: 300px;
+  height: 100px;
+  background-color: white;
+}
+
+.container-3 button{
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #41769a;
+  outline: none;
+  border: none;
+}
+
+
 
 
 .wrapper.collapse .sidebar{
@@ -299,6 +355,7 @@ body{
           <i class="fas fa-bell"></i>
           </a></li>
         </div>
+
           <!-- <div class="not-dropdown"> -->
 <div class="notify-box" id="box">
   <h2>Notification <span>8</span></h2> 
@@ -354,16 +411,20 @@ body{
     
       <ul>
         <li><a href="#">
-          <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-          <span class="title">Home</span></a></li>
+          <span class="icon"><img src="/asset/images/message-icon.png" alt=""></span>
+          <span class="title">Message</span></a></li>
         <li><a href="#">
-          <span class="icon"><i class="fa fa-circle" aria-hidden="true"></i></span>
-          <span class="title">Debts</span>
+          <span class="icon"><img src="../asset/images/student-icon.png" alt=""></span>
+          <span class="title">Students</span>
           </a></li>
         <li><a href="#">
-          <span class="icon"><i class="fa fa-circle" aria-hidden="true"></i></span>
-          <span class="title">Complaint</span>
-          </a></li>
+          <span class="icon"><img src="/asset/images/parent-icon.png" alt=""></span>
+          <span class="title">Parents</span>
+          </a></li>   
+            <li><a href="#">
+              <span class="icon"><img src="../asset/images/home-icon.png" alt=""></span>
+              <span class="title">Home</span>
+              </a></li>
     </ul>
   </div>
   
@@ -371,28 +432,66 @@ body{
   
   <div class="main_container">
     <div class="item">
-      
-      <h3>Kindly Select reason for Contend</h3> <br>
-      <label for="reason">REASON</label>
-      <select name="" id="reason">
-        <option value="reason">Options applicable</option>
-      <option value="reason">Overcharge by School</option>
-      <option value="reason">Debt Cleared</option>
-    </select>
-    <br> <br> <br> 
-    <form action="#" method="post" enctype="multipart/form-data">
-        <h3 style="color: #41769a">
-            SELECT A FILE TO UPLOAD
-        </h3>
-        <br> 
-        <input type="file" name="fileupload" id="fileupload">
-        <input type="submit" value="Upload">
-        
-        
-            </form>
+     <br> <p> <small>Hello</small> <span style="font-size: 18px;"> <strong>(Chrisland International School)</strong></span></p>
+     <p> <small>What would you like to do today</small></p>
   </div>
 
+
+  <div class="container-2">
+    <div class="left" style=" margin-left: 70px;">
+      <p style="text-align: end; padding: 10px;"><b><small>view more...</small></b></p> <hr>
+    
+      <img src="../asset/images/prof-1.jfif" alt="img-1">  <span class="span-1">Hannah Morgan</span>   <span class="span-2"> <button>#22,500</button></span> <hr>
+      <img src="../asset/images/prof-4.jpg" alt="img-1">  <span class="span-1">Jennifer Bassey</span>   <span class="span-2"> <button>#28,500</button></span> <hr>
+      <img src="../asset/images/prof-5.jpg" alt="img-1">  <span class="span-1">Mujeeb Martins</span>   <span class="span-2"> <button>#30,500</button></span> <hr>
+      <img src="../asset/images/prof-4.jpg" alt="img-1">  <span class="span-1">Zainabuh Fawaz</span>   <span class="span-2"> <button>#82,500</button></span> <hr>
+      <img src="../asset/images/prof-1.jfif" alt="img-1">  <span class="span-1">Hannah Morgan</span>   <span class="span-2"> <button>#22,500</button></span>  <hr>
+
+    </div>
+
+
+    <div class="right" style="margin-left: 70px;">
+      <img style="width: 200px; margin-left: 15px;" src="../asset/images/70.png" alt=""> <br> <br>
+      <img style="margin-left: 10px;" src="../asset/images/Student with debt.png" alt="">
+      <img style="margin-left: 10px;" src="../asset/images/more.png" alt=""> <br> <br>
+
+      <img  style="margin-left: 10px;"src="../asset/images/Student without debt.png" alt="">
+      <img  style="margin-left: 10px;"src="../asset/images/less.png" alt="">
+
+
+    </div>
+  
+
+  </div>
+<br> <br>
+<p style="text-align: start; padding: 10px; margin-left: 70px;"><b><small>view more...</small></b></p> 
+
+
+ <div class="container-3" style=" margin-left: 70px;">
+  <button>Add Student</button> <span> <button> Edit Student</button></span> <br>
+  <button>Del Student</button> <span> <button> Sort Student</button></span>
+
+
+
+ </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+<!-- end of main-container -->
 </div>
+
+
+
+<!-- end -->
 </div>
 </div>
  

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Contend</title>
+	<title>Parent Dashboard</title>
 	<style>
 *{
   margin: 0;
@@ -158,15 +158,49 @@ body{
   
 }
 
+
+
 .wrapper .main_container .item{
   background: rgb(247, 244, 244);
-  margin: 50px;
-
-  /* margin-bottom: 50px; */
-  padding: 30px;
+  /* margin: 50px; */
+  margin-left: 50px;
+  padding: 20px;
   font-size: 14px;
   line-height: 22px;
   
+  
+}
+.wrapper .main_container .item h2{
+  padding-bottom: 20px;
+}
+
+.wrapper .main_container .item-2{
+  border: 2px solid black;
+  padding: 20px;
+  margin-left: 70px;
+}
+.wrapper .main_container .item-2 img{
+height: 100px;
+width: 100px;
+margin-right: 20px;
+}
+.wrapper .main_container .item-2 .flex-student{
+  display: flex;
+  position: relative;
+}
+
+.flex-debt{
+  border: 1px solid black;
+  display: flex;
+  padding: 20px;
+}
+.flex-debt .debt-1{
+  padding: 20px;
+  margin-right: 80px;
+  
+}
+.debt-1 button{
+  background-color: #41769a;
 }
 
 
@@ -371,28 +405,70 @@ body{
   
   <div class="main_container">
     <div class="item">
-      
-      <h3>Kindly Select reason for Contend</h3> <br>
-      <label for="reason">REASON</label>
-      <select name="" id="reason">
-        <option value="reason">Options applicable</option>
-      <option value="reason">Overcharge by School</option>
-      <option value="reason">Debt Cleared</option>
-    </select>
-    <br> <br> <br> 
-    <form action="#" method="post" enctype="multipart/form-data">
-        <h3 style="color: #41769a">
-            SELECT A FILE TO UPLOAD
-        </h3>
-        <br> 
-        <input type="file" name="fileupload" id="fileupload">
-        <input type="submit" value="Upload">
-        
-        
-            </form>
+     <br> <h2>Hello <span style="color: #41769a;"> <i>Mr.  Anthony  Olaoye, </i></span></h2>
   </div>
 
+  <h2 style="margin-left: 70px;">Student Details</h2>
+
+<div class="item-2">
+
+  <div class="flex-student">
+
+<div>
+<img src="../asset/images/prof-1.jfif" alt="img-1">
 </div>
+
+<div>
+  <p> <b>Full Name:</b><span style="color: grey;"> Emmanuel Adewale Olaoye</span> </p> <br>
+  <p> <b>Present Class:</b> <span style="color: grey;"> SS2 D</span> </p> <br>
+  <p><b>Student ID: </b> <span style="color: grey;">2D3345678</span> </p>
+</div>
+</div>
+</div>
+<br> <br>
+<!-- next -->
+<h2 style="margin-left: 70px;">Debts</h2>
+<div item-3>
+  <div style="margin-left: 70px;"class="flex-debt">
+    <div></div>
+    <div class="debt-1">
+<h3>Session</h3> <br>
+<p style="color: grey;">2017/2018</p> <br>
+<p style="color: grey;">2019/2020</p> 
+    </div>
+
+    <div class="debt-1">
+      <h3>Amount</h3> <br>
+      <p style="color: grey;">#32,450</p> <br>
+      <p style="color: grey;">#10,800</p> 
+    </div>
+
+    <div class="debt-1">
+      <h3>Fee Category</h3> <br>
+      <p style="color: grey;">3rd Term Scool Fee</p> <br>
+      <p style="color: grey;">Summer Lesson Fee</p>
+    </div>
+
+    <div class="debt-1">
+      <h3> </h3><br> <br>
+      <p> <button style="color: rgb(247, 241, 241);"><a href="#"></a> Contend</button></p> <br> 
+      <p> <button style="color: rgb(247, 241, 241);"><a href="#"></a> Contend</button></p>
+    </div>
+  </div>
+</div>
+<br>
+<div>
+  <h2 style="margin-left: 70px; word-spacing: 3px;">Recent Messages</h2>
+  <p style="margin-left: 90px; word-spacing: 3px;"><small> <strong> Deadline Day is here- </strong> Hello Sir, We will like to inform you that the last day for the payment o...</small></p>
+  <p style="margin-left: 90px; word-spacing: 3px;"> <small> <strong>Welcome to a wonderful world of learning- </strong> Looking for a high standard school to enroll your ....</small></p>
+  <p style="margin-left: 90px; word-spacing: 3px;"> <small> <strong>New Login to your dashboard from Safari on IOS- </strong>We’ve noticed a new login,Anthony, if this w....</small></p>
+</div>
+<!-- end of main-container -->
+</div>
+
+
+
+<!-- end -->
 </div>
 </div>
  
